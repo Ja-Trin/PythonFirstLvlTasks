@@ -1,0 +1,66 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ab95646d-cdb6-40ad-b7b9-0bfe5374f7e2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>WorkWithTxtFiles\FileSelector.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>FirstLvlTasks</Name>
+    <RootNamespace>FirstLvlTasks</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ArraysDifference\Arrays.py" />
+    <Compile Include="WorkWithTxtFiles\FileSelector.py" />
+    <Compile Include="WorkWithTxtFiles\ReaderUtil.py" />
+    <Compile Include="WorkWithTxtFiles\ResourceUtil.py" />
+    <Compile Include="WorkWithTxtFiles\TxtUtil.py" />
+    <Resource Include="ToFindTheLast\config.json" />
+    <Compile Include="ArraysDifference\SimilarityCalculation.py" />
+    <Compile Include="ToFindTheLast\FindTheLast.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArraysDifference\" />
+    <Folder Include="WorkWithTxtFiles\" />
+    <Folder Include="ToFindTheLast\" />
+    <Folder Include="ToFindTheLast\files\" />
+    <Folder Include="WorkWithTxtFiles\files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArraysDifference\data.json" />
+    <Content Include="ToFindTheLast\files\01.txt" />
+    <Content Include="ToFindTheLast\files\02.txt" />
+    <Content Include="ToFindTheLast\files\03.txt" />
+    <Content Include="ToFindTheLast\files\04.txt" />
+    <Content Include="ToFindTheLast\files\05.txt" />
+    <Content Include="ToFindTheLast\files\06.txt" />
+    <Content Include="ToFindTheLast\files\07.txt" />
+    <Content Include="ToFindTheLast\files\08.txt" />
+    <Content Include="ToFindTheLast\files\09.txt" />
+    <Content Include="ToFindTheLast\files\10.txt" />
+    <Content Include="ToFindTheLast\files\11.txt" />
+    <Content Include="ToFindTheLast\files\12.txt" />
+    <Content Include="ToFindTheLast\files\13.txt" />
+    <Content Include="WorkWithTxtFiles\config.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
